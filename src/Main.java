@@ -15,8 +15,8 @@ public class Main {
 
     public static int GetValue(String a, String b){
         int n1 = Integer.parseInt(String.valueOf(a.charAt(a.length()-1)));
-        int n2 = Integer.parseInt(String.valueOf(b.charAt(b.length()-1)));
-        String result = String.valueOf(Math.round(Math.pow(n1,n2)));
+        int n2 = Integer.parseInt(String.valueOf(b));
+        String result = String.valueOf((int)(Math.pow(n1,n2)));
         return Integer.parseInt(String.valueOf(result.charAt(result.length()-1)));
     }
 }
